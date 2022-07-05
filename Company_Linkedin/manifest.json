@@ -1,0 +1,33 @@
+{
+    "name": "Company_Linkedin",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action":{
+       
+        "default_icon":"logo.png",
+        "default_popup":"popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            
+            "https:\/\/www.linkedin.com\/company*"
+          ],
+          "js": [
+            "content.js"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+
+
+    "icons":{
+        "128": "logo.png"
+        
+
+    },
+    "permissions":["activeTab"]
+    
+
+
+}
